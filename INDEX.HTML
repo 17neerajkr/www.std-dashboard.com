@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STD.DASHBOARD</title>
+    
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <LINK rel="STYLESHEET" href="STYLE.CSS">
+        <STYLE>
+            /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fffdfd;
+    padding: 1rem;
+}
+
+.navbar .logo {
+    color: #0d0000;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    color: #0d0101;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: BOLD;
+    font-style: calc();
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-toggle .hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 0;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+}
+
+
+        </STYLE>
+
+</head>
+
+<body>
+<HR>
+
+    <header>
+        <HR>
+        <nav class="navbar">
+            <a href="#" class="logo"></a>
+            <ul class="nav-links">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT.US</a></li>
+                <li><a href="#">GET IN TOUCH</a></li>
+                <li><a href="#">COMMUNITY</a></li>
+                <!-- <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form> -->
+            </ul>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+           
+        </nav>
+    </header>
+
+<HR>
+
+
+    <div class="container">
+
+        <!-- aside section start -->
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <h2><span class="danger">EDU-WEB</span></h2>
+                </div>
+                <DIV class="CLOSE">
+                  <span class="material-symbols-sharp">
+                    local_library
+                    </span>
+                </DIV>
+            </div>
+
+            <!-- end top here -->
+
+            <div class="sidebar">
+
+                <a href="#">
+                    <span class="material-symbols-sharp">grid_view</span>
+                    <h3>DASHBOARD</h3>
+                </a>
+
+
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        library_books
+                    </span>
+                    <h3>MY COURSES</h3>
+                </a>
+
+
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        school
+                    </span>
+                    <h3>ACADEMIC </h3>
+                </a>
+
+
+
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        manage_search
+                    </span>
+                    <h3> RESOURCE ANALYSIS</h3>
+                </a>
+
+
+
+
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        monitoring
+                    </span>
+
+                    <h3> ASSIGNMENT / TASK</h3>
+                </a>
+
+
+
+
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        event_available
+                    </span>
+                    <h3>SCHEDULE</h3>
+                </a>
+
+
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        query_stats
+                    </span>
+                    <h3> PROGRESS TRACKER</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        badge
+                    </span>
+                    <h3>BADGES STORE</h3>
+                </a>
+
+
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        settings
+                    </span>
+                    <h3>SETTING</h3>
+                </a>
+
+
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        logout
+                    </span>
+                    <h3>LOG-OUT</h3>
+                </a>
+
+
+            </div>
+        </aside>
+
+
+
+
+      <!-- --------------
+        start main part
+      --------------- -->
+
+      <main>
+        <h1>ANALYSIS DASHBOARD</h1>
+
+        <div class="date">
+          <input type="date" >
+        </div>
+
+     <div class="insights">
+
+        <!-- start seling -->
+         <div class="sales">
+            <span class="material-symbols-sharp">ASSIGNMENT</span>
+            <div class="middle">
+
+              <div class="left">
+                <h3>LEETCODE</h3>
+                <h1>STACK </h1>
+              </div>
+               <div class="progress">
+                   <svg>
+                      <circle  r="30" cy="40" cx="40"></circle>
+                   </svg>
+                   <div class="number"><p>60%</p></div>
+               </div>
+
+            </div>
+            <small>FEW HOURS AGO...</small>
+        </div>
+
+
+         <!-- end seling -->
+              <!-- start expenses -->
+              <div class="expenses">
+                <span class="material-symbols-sharp">local_mall</span>
+                <div class="middle">
+ 
+                  <div class="left">
+                    <h3>COURSES</h3>
+                    <h1>JAVA PLAYLIST </h1>
+                  </div>
+                   <div class="progress">
+                       <svg>
+                          <circle  r="30" cy="40" cx="40"></circle>
+                       </svg>
+                       <div class="number"><p>80%</p></div>
+                   </div>
+ 
+                </div>
+                <small>Last 24 Hours</small>
+             </div>
+
+             <!-- end seling -->
+               <!-- start seling -->
+               <div class="income">
+                <span class="material-symbols-sharp">stacked_line_chart</span>
+                <div class="middle">
+ 
+                  <div class="left">
+                    <h3>PROGRESS TRACKER</h3>
+                    <h1>MONTHLY</h1>
+                  </div>
+                   <div class="progress">
+                       <svg>
+                          <circle  r="30" cy="40" cx="40"></circle>
+                       </svg>
+                       <div class="number"><p>90%</p></div>
+                   </div>
+ 
+                </div>
+                <small>Last few days..</small>
+             </div>
+            <!-- end seling -->
+        </div>
+        <!-- end insights -->
+       <div class="recent_order">
+          <h2>RETASKILY</h2>
+          <table> 
+              <thead>
+               <tr>
+                 <th> MY COURSES</th>
+                 <th>PLATFORM</th>
+                 <th>TOPIC</th>
+                 <th>STATUS</th>
+               </tr>
+              </thead>
+               <tbody>
+                <tr>
+                    <td>JAVA</td>
+                    <td>LEETCODE</td>
+                    <td>STACK</td>
+                    <td class="warning">Pending</td>
+                    <td class="primary">Details</td>
+                  </tr>
+                  <tr>
+                   <td>WEB-DEV</td>
+                   <td>W3.SCHOOL</td>
+                   <td>CSS-DISPLAY</td>
+                   <td class="warning">complete</td>
+                   <td class="primary">Details</td>
+                 </tr>
+                 <tr>
+                    <td>ACADEMIC</td>
+                    <td>DATA STRUCTURE</td>
+                    <td>HACKERRANK</td>
+                    <td class="warning">Pending</td>
+                    <td class="primary">Details</td>
+                  </tr>
+                  <tr>
+                    <td>PROJECT MINI</td>
+                    <td>AI-CHATBOT</td>
+                    <td>Due</td>
+                    <td class="warning">Process</td>
+                    <td class="primary">Details</td>
+                  </tr>
+                </tbody>
+           </table>
+           <a href="#">Show All</a>
+        </div>
+    </main>
+    <!------------------
+       end main
+      ------------------->
+
+    <!----------------
+      start right main 
+    ---------------------->
+  <div class="right">
+
+<div class="top">
+ <button id="menu_bar">
+   <span class="material-symbols-sharp">menu</span>
+ </button>
+ <div class="theme-toggler">
+    <span class="material-symbols-sharp active">light_mode</span>
+    <span class="material-symbols-sharp">dark_mode</span>
+  </div>
+   <div class="profile">
+      <div class="info">
+          <p><b>Neerajkr.</b></p>
+          <p>Admin</p>
+          <small class="text-muted"></small>
+      </div>
+      <div class="profile-photo">
+        <img src="https://avatars.githubusercontent.com/u/180755023?v=4" alt="photo"/>
+      </div>
+   </div>
+</div>
+<div class="recent_updates">
+    <h2>Notice Update</h2>
+  <div class="updates">
+     <div class="update">
+        <div class="profile-photo">
+           <img src="https://contentstatic.techgig.com/photo/90325682.cms" alt="C PROJECT"/>
+        </div>
+       <div class="message">
+          <p><b>submission:</b>last c project github </p>
+       </div>
+     </div>
+     <div class="update">
+       <div class="profile-photo">
+       <img src="https://i0.wp.com/junilearning.com/wp-content/uploads/2020/06/python-programming-language.webp?fit=1920%2C1920&ssl=1" alt="python"/>
+       </div>
+      <div class="message">
+         <p><b>complete:</b> playlist of python prog..</p>
+      </div>
+    </div>
+    <div class="update">
+     <div class="profile-photo">
+        <img src="data:image/png;base64,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" alt="RUBY"/>
+     </div>
+    <div class="message">
+       <p><b>left-over:</b>  60% topic is left of ruby</p>
+    </div>
+  </div>
+ </div>
+ </div>
+
+ <div class="sales-analytics">
+    <h2>upcoming task</h2>
+
+     <div class="item onlion">
+       <div class="icon">
+        <span class="material-symbols-sharp">
+          deployed_code
+          </span>
+       </div>
+       <div class="right_text">
+         <div class="info">
+           <h3>apna collage</h3>
+           <small class="text-muted">at 16:00 pm</small>
+         </div>
+         <h5 class="danger">27%</h5>
+         <h3>113</h3>
+       </div>
+     </div>
+     <div class="item onlion">
+        <div class="icon">
+          <span class="material-symbols-sharp">
+            event_note
+            </span>
+        </div>
+        <div class="right_text">
+          <div class="info">
+            <h3>collage task</h3>
+            <small class="text-muted">at 20: 00 pm</small>
+          </div>
+          <h5 class="success">77%</h5>
+          <h3>COA</h3>
+        </div>
+      </div>
+      <div class="item onlion">
+        <div class="icon">
+          <span class="material-symbols-sharp">
+            developer_mode
+            </span>
+        </div>
+        <div class="right_text">
+            <div class="info">
+              <h3>code with harry</h3>
+              <small class="text-muted">at 10:00 pm</small>
+            </div>
+            <h5 class="danger">32%</h5>
+            <h3>124</h3>
+          </div>
+        </div>
+  </div>
+  
+
+
+  <div class="item add_product">
+    <div>
+    <span class="material-symbols-sharp">add</span>
+    </div>
+</div>
+</div>
+
+
+</div>
+<script src="script.js"></script>
+
+
+
+
+
+</body>
+
+</html>
